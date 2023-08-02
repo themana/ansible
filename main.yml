@@ -6,7 +6,5 @@
   sudo: true
 
   roles:
-    - docker
-    - mergerfs
-    - snapraid
+    - docker    
     - epsilon
