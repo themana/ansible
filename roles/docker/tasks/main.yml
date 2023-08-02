@@ -1,8 +1,6 @@
----
-- name: Print the actual user
-  command: whoami
-  
+---  
 - name: install packages required by docker
+  become: yes
   apt:
     name: "apt-transport-https"
     state: present
