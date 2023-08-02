@@ -3,7 +3,9 @@
 # the binary | this.file | -i targets | *optional --tags | -K asks for sudo pass
 
 - hosts: all
-
+  remote_user: themana
+  become: yes
+  become_method: sudo
   roles:
     - docker    
     - epsilon
